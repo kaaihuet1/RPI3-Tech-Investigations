@@ -1,0 +1,7 @@
+# Linux Command Line Commands for the camera
+
+fswebcam image.jpg 
+# Saves image from webcam as image.jpg
+
+ffmpeg -f video4linux2 -r 5 -s 640x480 -i /dev/video0 out.avi 
+# Records video for 5sec and saves as a file out.avi
